@@ -1,0 +1,85 @@
+@charset "utf-8";
+/* 레이아웃 */
+#mNav{
+ display: none; position: absolute; top: 35px; right: 24px;
+}
+#header{
+  width: 100%;
+  border-bottom: 1px solid #c6c6c6;
+  background: rgba(0,0,0,0);
+}
+
+/* 모바일*/
+.ham{
+  display:block; width: 30px; height: 15px;  padding: 10px 5px;
+}
+.ham span{
+  position: relative; display: block; width: 30px; height: 4px; background: #142591; bottom: -5px; border-radius: 30px;
+}
+.ham span::before{
+  content: '';
+  width: 30px; height: 4px; background: #142591; position: absolute; left: 0; bottom: -8px; border-radius: 30px;
+}
+.ham span::after{
+  content: '';
+  width: 30px; height: 4px; background: #142591; position: absolute; left: 0; top: -8px; border-radius: 30px;
+}
+/* 가운데*/
+.container{
+  position: relative;
+  width: 1000px;
+  margin: 0 auto;
+  background: rgba(0,0,0,0);
+}
+/* 헤더 */
+.header h1 {
+  float: left;
+  padding: 8px 8px 3px 0;
+  display: block;
+}
+.header h1 img{
+  width: 250px;
+}
+
+.header .nav{
+  float: right;
+}
+.header .nav ul li{
+  float: left;
+  width: 140px;
+  text-align: center;
+}
+.header .nav ul li a{
+  display: block;
+  padding: 35px 10px;
+  font-size:  17px;
+  font-weight: 700;
+/*미디어퀴리*/
+}
+@media(max-width: 1000px){
+  #mNav{
+    display: block;
+  }
+  .nav{
+    display: none;
+  }
+  .container {
+    width: 100%;
+  }
+  .header h1{
+    float: none;
+    text-align: center;
+  }
+}
+@media(max-width: 800px){
+
+}
+@media(max-width: 500px){
+
+}
+@media(max-width: 300px){
+
+}
+@media(max-width: 100px){
+
+}
