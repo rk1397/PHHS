@@ -1,0 +1,56 @@
+@charset "utf-8";
+/* 여백 초기화 */
+body,div,ul,li,dl,dd,dt,ol,h1,h2,input,fieldset,legend,p,table,th,td,tr,textarea,button{
+  margin:0;
+  padding:0;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+a:hover {
+  color:blue;
+}
+.clearfix li a:hover{
+  border-bottom: 2px solid blue;
+}
+
+body, input, textarea, button, table {
+  font-family: 'Noto Sans KR';
+  color: #222;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+ul,li,ol {
+  list-style:none
+}
+
+
+h1,h2,h3,h4,h5,h6 {
+  font-size: 13px;
+  font-weight: normal;
+}
+
+img,fieldset {
+  border:0 none;
+}
+
+
+button {
+  border: 0;
+}
+
+
+img {
+  width: 100%;
+}
+
+.clearfix:before, .clearfix:after {
+  display: block;
+  content: '';
+  line-height: 0;
+}
+.clearfix:after {
+  clear: both;
